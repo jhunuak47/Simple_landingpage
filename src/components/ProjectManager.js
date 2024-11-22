@@ -8,7 +8,7 @@ const ProjectManager = () => {
   // Fetch projects
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/projects")
+      .get("https://flipr-backend-edeab9affc43.herokuapp.com/api/projects")
       .then((response) => setProjects(response.data))
       .catch((err) => console.error("Error fetching projects:", err));
   }, []);

@@ -20,7 +20,7 @@ const Banner = () => {
     e.preventDefault();
     try {
       // Save contact form data
-      const contactResponse = await axios.post("http://localhost:5000/api/contacts", formData);
+      const contactResponse = await axios.post("https://flipr-backend-edeab9affc43.herokuapp.com/api/contacts", formData);
       console.log("Saved contact:", contactResponse.data);
 
       // Submit to the newsletter subscription API
