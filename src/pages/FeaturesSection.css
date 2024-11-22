@@ -1,0 +1,168 @@
+/* Main container for the combined sections */
+.features-section {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* ================= NEXT SECTION ================= */
+
+/* Container for the Next Section */
+.next-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Left side text content */
+.text-content {
+  flex: 1;
+  max-width: 45%;
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Right side image content */
+.image-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 50%;
+}
+
+/* Circular styles */
+.circle {
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* Larger first image */
+.large-circle {
+  width: 250px; /* Increased size */
+  height: 250px; /* Increased size */
+  z-index: 1;
+  right: 20px; /* Positioned slightly to the right */
+}
+
+/* Medium circles with gaps */
+.medium-circle {
+  width: 150px;
+  height: 150px;
+  z-index: 2;
+}
+
+.medium-circle.top {
+  top: -55px; /* 5px gap above */
+  right: -100px;
+}
+
+.medium-circle.bottom {
+  bottom: -55px; /* 5px gap below */
+  left: -100px;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= WHY CHOOSE US SECTION ================= */
+
+/* Container for Why Choose Us */
+.why-choose-us {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Section heading */
+.section-heading {
+  font-size: 2.5rem;
+  color: #007bff; /* Blue color */
+  margin-bottom: 10px;
+}
+
+/* Underline below heading */
+.heading-underline {
+  width: 80px;
+  height: 4px;
+  background-color: #007bff; /* Blue color */
+  margin: 10px auto 30px;
+}
+
+/* Grid container */
+.grid-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Individual grid item */
+.grid-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+/* Hover effect */
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon styling */
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+/* Title styling */
+.item-title {
+  font-size: 1.2rem;
+  color: #007bff; /* Blue color */
+  margin-bottom: 10px;
+}
+
+/* Description styling */
+.item-description {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Arrow icon styling */
+.arrow-icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,68 @@
+/* Main container for the About Us section */
+.about-us {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Container for three images */
+  .images-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-bottom: 30px;
+  }
+  
+  /* Individual image item */
+  .image-item {
+    width: 200px; /* Set width for each image item */
+    height: 200px; /* Set height for each image item */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Diagonal image style (first image) */
+  .diagonal-image {
+    transform: rotate(-15deg); /* Rotate image to make it diagonal */
+    position: relative;
+    top: -20px; /* Adjust position for the diagonal effect */
+  }
+  
+  /* Styling the images */
+  .about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Section heading */
+  .section-heading {
+    font-size: 2.5rem;
+    color: #007bff; /* Blue color */
+    margin-top: 30px;
+  }
+  
+  /* Underline below heading */
+  .heading-underline {
+    width: 80px;
+    height: 4px;
+    background-color: #007bff; /* Blue color */
+    margin: 10px auto 30px;
+  }
+  
+  /* Paragraph content */
+  .about-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

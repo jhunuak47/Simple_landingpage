@@ -1,0 +1,54 @@
+/* Header container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #007bff;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+  width: 120px;
+}
+
+/* Menu styling */
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.menu ul li {
+  font-size: 1rem;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: #f1f1f1;
+}
+
+/* Contact item styling */
+.contact-item a {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-item a:hover {
+  background-color: #e68a00;
+}

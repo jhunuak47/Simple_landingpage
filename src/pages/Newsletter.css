@@ -1,0 +1,123 @@
+/* =================== Newsletter Section =================== */
+.newsletter-section {
+  font-family: Arial, sans-serif;
+}
+
+/* Background image and text styling */
+.newsletter-background {
+  position: relative;
+  text-align: center;
+}
+
+.newsletter-text h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.newsletter-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 250px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #0056b3;
+}
+
+/* =================== Footer =================== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #007bff;
+  padding: 20px;
+  color: white;
+}
+
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.footer-menu li:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.footer-subscribe input {
+  padding: 10px;
+  width: 250px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.footer-subscribe button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-subscribe button:hover {
+  background-color: #f1f1f1;
+  color: #0056b3;
+}
+
+/* =================== Footer Bottom =================== */
+.footer-bottom {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-center .footer-logo {
+  width: 120px;
+}
+
+.footer-right .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-right .social-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.footer-right .social-icon:hover {
+  opacity: 0.8;
+}
