@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import API_BASE_URL from "../apiConfig";
 
 const ContactManager = () => {
   const [contacts, setContacts] = useState([]);
@@ -7,7 +8,7 @@ const ContactManager = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/contacts")
+    axios.get(`${API_BASE_URL}/api/contacts`)
       .then((response) => {
         setContacts(response.data);
         setLoading(false);

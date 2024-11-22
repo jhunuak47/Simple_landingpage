@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import API_BASE_URL from "../apiConfig";
 import "./Banner.css";
 
 const Banner = () => {
@@ -20,11 +21,11 @@ const Banner = () => {
     e.preventDefault();
     try {
       // Save contact form data
-      const contactResponse = await axios.post("https://flipr-backend-edeab9affc43.herokuapp.com/api/contacts", formData);
+      const contactResponse = await axios.post(`${API_BASE_URL}/api/contacts`, formData)
       console.log("Saved contact:", contactResponse.data);
 
       // Submit to the newsletter subscription API
-      const subscribeResponse = await axios.post("http://localhost:5000/api/subscribers", {
+      const subscribeResponse = await axios.post("`${API_BASE_URL}/api/subscribers", {
         email: formData.email,
       });
       console.log("Newsletter subscription:", subscribeResponse.data);

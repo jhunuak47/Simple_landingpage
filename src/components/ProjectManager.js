@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import API_BASE_URL from "../apiConfig";
 
 const ProjectManager = () => {
   const [projects, setProjects] = useState([]);
@@ -8,7 +9,7 @@ const ProjectManager = () => {
   // Fetch projects
   useEffect(() => {
     axios
-      .get("https://flipr-backend-edeab9affc43.herokuapp.com/api/projects")
+      .get(`${API_BASE_URL}/api/projects`)
       .then((response) => setProjects(response.data))
       .catch((err) => console.error("Error fetching projects:", err));
   }, []);

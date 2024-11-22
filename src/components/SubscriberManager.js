@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import API_BASE_URL from "../apiConfig";
 
 const SubscriberManager = () => {
   const [subscribers, setSubscribers] = useState([]);
@@ -8,7 +9,7 @@ const SubscriberManager = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/subscribers") // Corrected endpoint
+      .get(`${API_BASE_URL}/api/subscribers`) 
       .then((response) => {
         setSubscribers(response.data);
         setLoading(false);
