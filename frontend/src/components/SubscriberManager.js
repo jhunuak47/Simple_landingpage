@@ -8,7 +8,7 @@ const SubscriberManager = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/subscribers") // Corrected endpoint
+      .get("https://flipr-backend.herokuapp.com/api/subscribers") // Corrected endpoint
       .then((response) => {
         setSubscribers(response.data);
         setLoading(false);

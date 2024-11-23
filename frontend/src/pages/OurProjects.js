@@ -9,7 +9,7 @@ const OurProjects = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/projects")
+      .get("https://flipr-backend.herokuapp.com/api/projects")
       .then((response) => {
         setProjects(response.data);
         setLoading(false);

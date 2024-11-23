@@ -10,7 +10,7 @@ const HappyClients = () => {
   // Fetch clients from the backend
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/clients") // Ensure the API endpoint matches your backend route
+      .get("https://flipr-backend.herokuapp.com/api/clients") // Ensure the API endpoint matches your backend route
       .then((response) => {
         setClients(response.data);
         setLoading(false);

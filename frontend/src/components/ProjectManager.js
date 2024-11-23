@@ -8,7 +8,7 @@ const ProjectManager = () => {
   // Fetch projects
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/projects")
+      .get("https://flipr-backend.herokuapp.com/api/projects")
       .then((response) => setProjects(response.data))
       .catch((err) => console.error("Error fetching projects:", err));
   }, []);
@@ -29,7 +29,7 @@ const ProjectManager = () => {
     form.append("image", formData.image);
 
     axios
-      .post("http://localhost:5000/api/projects", form, {
+      .post("https://flipr-backend.herokuapp.com/api/projects", form, {
         headers: { "Content-Type": "multipart/form-data" },
       })
       .then((response) => {

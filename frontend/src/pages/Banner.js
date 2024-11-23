@@ -20,11 +20,11 @@ const Banner = () => {
     e.preventDefault();
     try {
       // Save contact form data
-      const contactResponse = await axios.post("https://flipr-backend-edeab9affc43.herokuapp.com/api/contacts", formData);
+      const contactResponse = await axios.post("https://flipr-backend.herokuapp.com/api/contacts", formData);
       console.log("Saved contact:", contactResponse.data);
 
       // Submit to the newsletter subscription API
-      const subscribeResponse = await axios.post("http://localhost:5000/api/subscribers", {
+      const subscribeResponse = await axios.post("https://flipr-backend.herokuapp.com/api/subscribers", {
         email: formData.email,
       });
       console.log("Newsletter subscription:", subscribeResponse.data);

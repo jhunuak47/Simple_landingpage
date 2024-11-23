@@ -14,7 +14,7 @@ const Newsletter = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/api/subscribers", { email }) // Make sure this matches your backend API
+      .post("https://flipr-backend.herokuapp.com/api/subscribers", { email }) // Make sure this matches your backend API
       .then((response) => {
         alert("Subscribed successfully!");
         setEmail(""); // Clear the input field

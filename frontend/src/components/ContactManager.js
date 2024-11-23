@@ -7,7 +7,7 @@ const ContactManager = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/contacts")
+    axios.get("https://flipr-backend.herokuapp.com/api/contacts")
       .then((response) => {
         setContacts(response.data);
         setLoading(false);

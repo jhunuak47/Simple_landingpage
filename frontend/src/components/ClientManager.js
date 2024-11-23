@@ -6,7 +6,7 @@ const ClientManager = () => {
   const [formData, setFormData] = useState({ name: "", designation: "", description: "", image: null });
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/clients")
+    axios.get("https://flipr-backend.herokuapp.com/api/clients")
       .then((response) => setClients(response.data))
       .catch((err) => console.error(err));
   }, []);
@@ -24,7 +24,7 @@ const ClientManager = () => {
     form.append("description", formData.description);
     form.append("image", formData.image);
 
-    axios.post("http://localhost:5000/api/clients", form, {
+    axios.post("https://flipr-backend.herokuapp.com/api/clients", form, {
       headers: { "Content-Type": "multipart/form-data" },
     })
       .then((response) => {
@@ -35,7 +35,7 @@ const ClientManager = () => {
   };
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:5000/api/clients/${id}`)
+    axios.delete(`https://flipr-backend.herokuapp.com/api/clients/${id}`)
       .then(() => setClients(clients.filter((client) => client._id !== id)))
       .catch((err) => console.error(err));
   };
@@ -54,7 +54,7 @@ const ClientManager = () => {
       <ul>
         {clients.map((client) => (
           <li key={client._id}>
-            <img src={`http://localhost:5000${client.image}`} alt={client.name} width="100" />
+            <img src={`https://flipr-backend.herokuapp.com${client.image}`} alt={client.name} width="100" />
             <h3>{client.name}</h3>
             <p>{client.designation}</p>
             <p>{client.description}</p>
