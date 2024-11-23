@@ -5,7 +5,6 @@ node_modules/
 *.env
 
 # Ignore build files
-frontend/build/
 backend/build/
 
 # Ignore system files
