@@ -1,30 +1,22 @@
-<<<<<<< HEAD
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Ignore node_modules
+node_modules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Ignore environment files
+*.env
 
-# testing
-/coverage
+# Ignore build files
+frontend/build/
+backend/build/
 
-# production
-/build
-
-# misc
+# Ignore system files
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+Thumbs.db
 
+# Ignore log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-node_modules/
-=======
-node_modules/
-build/
-.env
->>>>>>> 836e66fbbee887b0fd62e79f120f6c63ec4d4c11
+
+# Ignore IDE configurations (optional)
+.vscode/
+.idea/
