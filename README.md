@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# Flipr Landing Page  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the code for the **Flipr Landing Page**, a web application designed to manage and showcase projects, clients, and other essential information. This project is built with modern web technologies and includes both frontend and backend components.
 
-## Available Scripts
+## 🛠 Technologies Used  
 
-In the project directory, you can run:
+### Frontend
+- **React.js**: For building the user interface.
+- **Axios**: For making API requests to the backend.
+- **CSS**: For styling components.
 
-### `npm start`
+### Backend
+- **Node.js**: Server-side runtime environment.
+- **Express.js**: Web framework for handling routes and APIs.
+- **MongoDB Atlas**: Cloud database for storing project, client, and subscription data.
+- **Mongoose**: ODM for interacting with MongoDB.
+- **Heroku**: For hosting the backend and frontend.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
+- **Projects Management**: View and manage projects with descriptions and images.
+- **Clients Section**: Display client testimonials dynamically fetched from the backend.
+- **Newsletter Subscription**: Subscribe users and save their email addresses to the database.
+- **Responsive Design**: Fully responsive and works on all devices.
+- **Cloud Deployment**: Backend and frontend are deployed on Heroku.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 How to Run Locally  
 
-### `npm run build`
+### Prerequisites
+Make sure you have the following installed:
+- **Node.js** (v14 or later)
+- **npm** (Node Package Manager)
+- **MongoDB Atlas account** (for database setup)
+- **Git** (for cloning the repository)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Steps to Run Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/jhunuak47/flipr_landingpage.git
+   cd flipr_landingpage
+   ```
 
-### `npm run eject`
+2. **Set Up the Backend**
+   - Navigate to the `backend` folder:
+     ```bash
+     cd backend
+     ```
+   - Install backend dependencies:
+     ```bash
+     npm install
+     ```
+   - Create a `.env` file in the `backend` directory with the following content:
+     ```
+     MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority
+     NODE_ENV=development
+     REACT_APP_BACKEND_URL=http://localhost:5000
+     ```
+   - Replace `<username>`, `<password>`, `<cluster>`, and `<dbname>` with your MongoDB Atlas credentials.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Start the Backend Server**
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Set Up the Frontend**
+   - Navigate to the `frontend` folder:
+     ```bash
+     cd ../frontend
+     ```
+   - Install frontend dependencies:
+     ```bash
+     npm install
+     ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **Start the Frontend**
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6. **View the Application**
+   - Open your browser and visit:  
+     `http://localhost:3000` for the frontend.  
+     The backend will run on `http://localhost:5000`.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📂 Folder Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+flipr_landingpage/
+├── backend/
+│   ├── config/
+│   │   └── db.js           # MongoDB connection setup
+│   ├── models/             # Mongoose models
+│   ├── routes/             # API routes
+│   ├── .env                # Environment variables
+│   ├── server.js           # Main backend file
+│   └── package.json        # Backend dependencies
+├── frontend/
+│   ├── src/
+│   │   ├── components/     # React components
+│   │   ├── pages/          # Page components
+│   │   ├── App.js          # Main React App file
+│   │   └── index.js        # Entry point
+│   ├── public/             # Static files
+│   ├── .env                # Frontend environment variables
+│   └── package.json        # Frontend dependencies
+├── README.md               # Project documentation
+└── .gitignore              # Ignored files and folders
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🌐 Live Demo
+The application is live at:  
+**[Flipr Landing Page - Heroku](https://flipr-project-57ca1f0bf8c6.herokuapp.com)**
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤔 Approach  
 
-### Making a Progressive Web App
+1. **Planning**: Designed the folder structure to separate frontend and backend for maintainability.
+2. **Database Design**: Created schemas for projects, clients, and subscribers using Mongoose.
+3. **API Development**: Built RESTful APIs for managing projects, clients, and subscriptions.
+4. **Frontend Integration**: Connected the backend APIs with the React frontend using Axios.
+5. **Styling**: Ensured responsive design using CSS and media queries.
+6. **Deployment**: Deployed the application to Heroku with separate build and hosting for frontend and backend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📝 License  
+This project is licensed under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 👤 Author  
+- **Name**: Navin Kumar  
+- **GitHub**: [@jhunuak47](https://github.com/jhunuak47)  
+- **Email**: jhunu1201@gmail.com  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to reach out for feedback or contributions!
