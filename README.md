@@ -1,6 +1,6 @@
-# Flipr Landing Page  
+# Simple_landingpage  
 
-This repository contains the code for the **Flipr Landing Page**, a web application designed to manage and showcase projects, clients, and other essential information. This project is built with modern web technologies and includes both frontend and backend components.
+This repository contains the code for the **Simple_landingpage**, a web application designed to manage and showcase projects, clients, and other essential information. This project is built with modern web technologies and includes both frontend and backend components.
 
 ## 🛠 Technologies Used  
 
@@ -42,8 +42,8 @@ Make sure you have the following installed:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/jhunuak47/flipr_landingpage.git
-   cd flipr_landingpage
+   git clone https://github.com/jhunuak47/Simple_landingpage.git
+   cd Simple_landingpage
    ```
 
 2. **Set Up the Backend**
@@ -93,7 +93,7 @@ Make sure you have the following installed:
 ## 📂 Folder Structure
 
 ```
-flipr_landingpage/
+Simple_landingpage/
 ├── backend/
 │   ├── config/
 │   │   └── db.js           # MongoDB connection setup
