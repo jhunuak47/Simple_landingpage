@@ -119,7 +119,7 @@ Simple_landingpage/
 
 ## 🌐 Live Demo
 The application is live at:  
-**[Flipr Landing Page - Heroku](https://flipr-project-57ca1f0bf8c6.herokuapp.com)**
+**[Landing Page - Heroku](https://simple-landingpage-2c73562bd843.herokuapp.com/)**
 
 ---
 
